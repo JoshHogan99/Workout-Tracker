@@ -320,7 +320,7 @@ const templates = [
   },
 ];
 
-import { TemplatesHTML } from "./WorkoutTemplates";
+import { TemplatesHTML } from "../../components/WorkoutTemplates/WorkoutTemplates";
 import { useEffect, useState } from "react";
 
 function Workout() {

@@ -1,5 +1,6 @@
 import { IoIosMore } from "react-icons/io";
 import { FaClock } from "react-icons/fa";
+
 import "./WorkoutTemplates.css";
 
 export function TemplatesHTML({ templates }) {
