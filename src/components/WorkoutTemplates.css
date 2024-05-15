@@ -1,0 +1,41 @@
+.plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.plan {
+    border: 1.5px solid #eaeaea;
+    border-radius: 20px;
+    padding: 0.75rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.plan-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.plan-btn {
+    display: flex;
+    border: none;
+    border-radius: 6px;
+    padding: 0 0.2rem;
+    background: #ecf6ff;
+}
+
+.plan-btn svg {
+    font-size: 1.25rem;
+    color: #34a7f8;
+}
+
+.exercise-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #626569;
+}

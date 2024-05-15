@@ -1,0 +1,33 @@
+#header {
+    height: 50px;
+    margin-left: -1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.header {
+    border-bottom: 1px solid rgba(234, 234, 234, 0);
+    transition: border-bottom 0.25s ease;
+}
+
+.header.show {
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+}
+
+#header .heading {
+    font-weight: 600;
+    margin-top: 1.25rem;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+#header .heading.show {
+    opacity: 1;
+}
+
+#workout {
+    margin-top: 3.5rem;
+}
