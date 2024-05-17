@@ -321,32 +321,10 @@ const templates = [
 ];
 
 import { TemplatesHTML } from "../../components/WorkoutTemplates/WorkoutTemplates";
-import { useEffect, useState } from "react";
 
 function Workout() {
-  const [showHeader, setShowHeader] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 36) {
-        setShowHeader(true);
-      } else {
-        setShowHeader(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div id="workout">
-      <div id="header" className={`header ${showHeader ? "show" : ""}`}>
-        <p className={`heading ${showHeader ? "show" : ""}`}>Start Workout</p>
-      </div>
       <h1>Start Workout</h1>
       <p>Quick Start</p>
       <button>Start an Empty Workout</button>

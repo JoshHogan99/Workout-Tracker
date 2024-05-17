@@ -9,6 +9,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -18,21 +19,37 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
     margin: 0;
     padding: 0;
     color: #293038;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-button{
+button {
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
 }
 
-#workout {
-  padding: 0 1rem;
+#site-wrapper {
+  position: relative;
+}
+
+@media ( min-width: 1024px ) {
+  html, body {
+    background: #293038;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #site-wrapper {
+    width: 375px;
+    height: 667px;
+    overflow-y: scroll;
+    background: #fff;
+  }
 }

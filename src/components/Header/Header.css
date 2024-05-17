@@ -1,0 +1,30 @@
+header {
+    height: 50px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    border-bottom: 1px solid rgba(234, 234, 234, 0);
+    transition: border-bottom 0.25s ease;
+}
+
+.header.show {
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+}
+
+header .heading {
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+header .heading.show {
+    opacity: 1;
+}

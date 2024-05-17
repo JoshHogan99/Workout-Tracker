@@ -4,9 +4,9 @@ import { FaClock } from "react-icons/fa";
 import "./WorkoutTemplates.css";
 
 export function TemplatesHTML({ templates }) {
-  return templates.map((template) => {
+  return templates.map((template, index) => {
     return (
-      <div className="template">
+      <div key={index} className="template">
         <p style={{ fontWeight: "600", marginBottom: "1rem" }}>
           {template.name} ({template.plans.length})
         </p>
@@ -20,8 +20,8 @@ export function TemplatesHTML({ templates }) {
 function PlansHTML(plans) {
   return (
     <div className="plans">
-      {plans.map((plan) => (
-        <div className="plan" onClick={() => PlansModalHTML()}>
+      {plans.map((plan, index) => (
+        <div key={index} className="plan" onClick={() => PlansModalHTML()}>
           <div style={{ display: "flex", alignItems: "center" }}>
             <p className="plan-name">{plan.name}</p>
             <button className="btn plan-btn">
@@ -43,6 +43,7 @@ function PlansExercisesHTML(exercises) {
     <div>
       {exercises.slice(0, 3).map((exercise, index) => (
         <p
+          key={index}
           className="exercise-name"
           style={index < 2 ? { marginBottom: "0.1rem" } : { marginBottom: "0" }}
         >
